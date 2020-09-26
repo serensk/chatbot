@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>pixel</title>
+		<link rel="shortcut icon" href="icon.gif">
+</head>
+<body>
+<h3>Hello! My name is Pixel =)</h3>
+<h5 id="basicinfo">Please use lowercase letters</h5>
+<input type="text"title="pixel" placeholder="Talk to Pixel" class="ChatBot" id="getValue" onkeypress="cSearch()">
+
+<script type="text/javascript">
+	function cSearch() {
+		var get = document.getElementById("getValue").value;
+		if (get=="hello") {
+			alert("Hey! How are you?");
+		}
+		else if (get =="how are you") {
+			alert("i'm fine thanks for asking=)");
+		}
+	
+	}
+</script>
+
+<style type="text/css">
+	body{
+		background-image: url("Background.jpg");
+		background-size: 100%;
+	}
+	h3{
+		color: #e7e7e7;
+		text-align: center;
+	}
+	.ChatBot{
+		background-color: #2c2c2c;
+		color: #e7e7e7;
+		border-radius: 50px;
+		border: none;
+		text-align: centre;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		width: 50%;
+		height: 25px;
+		transition: 0.8s;
+		text-align: center;
+
+	}
+	#basicInfo{
+		color: #e7e7e7;
+		position: absolute;
+		top: 92%;
+		left: 6%;
+		transform: translate(-40%,-48%);
+	}
+</style>
+</body>
+</html>
